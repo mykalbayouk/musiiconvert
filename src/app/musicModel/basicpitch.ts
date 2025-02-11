@@ -1,3 +1,4 @@
+'use client';
 import {
   BasicPitch,
   noteFramesToTime,
@@ -6,7 +7,7 @@ import {
   type NoteEventTime,
 } from "@spotify/basic-pitch";
 import { Midi } from "@tonejs/midi";
-import getWeb from "./midiConvert";
+//import getWeb from "./midiConvert";
 
 /**
  * Inputs source of audio file and returns a pdf file
@@ -144,13 +145,13 @@ console.log(`Source: ${src.name}, Difficulty: ${difficulty}, Onset Threshold: ${
   // document.body.removeChild(link);
 
   const file = midiFile(base64);
-  let web;
-  try {
-    web = await getWeb(file);
-  } catch (error) {
-    console.error("Error converting MIDI file to web format:", error);
-  }
-  return web;
+  // let web;
+  // try {
+  //   web = await getWeb(file);
+  // } catch (error) {
+  //   console.error("Error converting MIDI file to web format:", error);
+  // }
+  return file;
 };
 
 /**

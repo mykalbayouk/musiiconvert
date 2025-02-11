@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { useState } from "react";
 import Slider from "@mui/material/Slider";
 import Modal from '@mui/material/Modal';
@@ -6,8 +6,6 @@ import Box from '@mui/material/Box';
 import getSheetMusic from "../musicModel/basicpitch";
 import DragAndDropUpload from "../components/dragDrop";
 import ClipLoader from "react-spinners/ClipLoader";
-import Link from "next/link";
-
 
 export default function Home() {
     const [file, setFile] = useState<File | null>(null);
