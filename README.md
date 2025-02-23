@@ -1,6 +1,6 @@
 # MusiiConvert
 
-MusiiConvert is a tool designed to convert music files from one format to another. It supports a variety of audio formats and provides an easy-to-use interface for seamless conversion.
+MusiiConvert is a tool designed to convert music mp3 files into sheet music. It uses Spotify's Basic-Pitch Model to convert the mp3 file into a MIDI File then that MIDI file is converted into sheet music by using note data/duration.
 
 ## Issue
 
